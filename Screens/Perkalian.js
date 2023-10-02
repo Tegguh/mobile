@@ -11,7 +11,7 @@ export default function Perkalian({ navigation }) {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View>
       <Text style={{ color: "blue", fontSize: 20 }}>Perkalian</Text>
       <TextInput
         style={styles.FormatInput}
