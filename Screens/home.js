@@ -3,7 +3,7 @@ export default function home({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Button
-        onPress={() => navigation.navigate("Notifications")}
+        onPress={() => navigation.navigate("Notif")}
         title="Go to notifications"
       />
       <text>Teguh Adi Prayoga</text>

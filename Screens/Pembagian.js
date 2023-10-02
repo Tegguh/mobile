@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Button, TextInput } from "react-native";
 import React, { useState } from "react";
 
-export default function Pembagian() {
+export default function Pembagian({ navigation }) {
   const [nilai1, setnilai1] = useState("10");
   const [nilai2, setnilai2] = useState("20");
   const [nilai3, setnilai3] = useState("0");
@@ -11,7 +11,7 @@ export default function Pembagian() {
   }
 
   return (
-    <View>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text style={{ color: "blue", fontSize: 20 }}>Pembagian</Text>
       <TextInput
         style={styles.FormatInput}
@@ -27,6 +27,8 @@ export default function Pembagian() {
       />
       <Button color="red" title="Pembagian" onPress={Pembagian} />
       <Text style={{ fontSize: 30, fontWeight: "bold" }}>Hasil : {nilai3}</Text>
+
+      <Button onPress={() => navigation.goBack()} title="Go back home" />
     </View>
   );
 }
